@@ -59,12 +59,6 @@
   title.append(bot);
   const svg = bot.querySelector("svg"), bubble = bot.querySelector(".bot-bubble"), wheels = bot.querySelectorAll(".bot-wheel");
 
-  const replay = document.createElement("button");
-  replay.type = "button";
-  replay.className = "title-replay";
-  replay.textContent = "Replay";
-  document.querySelector(".hero-inner").append(replay);
-
   const chars = [...title.querySelectorAll(".ch")];
   const pos = { x: 0, y: 0, flip: 1, tilt: 0, spin: 0 };
   let run = 0;
@@ -182,7 +176,6 @@
 
   async function startSecondVersion() {
     const id = ++run;
-    replay.classList.remove("show");
     say("", "normal");
     delete bot.dataset.reach;
     chars.forEach(el => { el.getAnimations().forEach(a => a.cancel()); });
@@ -237,7 +230,6 @@
     }
 
     await celebrate(home, id, margin, width);
-    replay.classList.add("show");
 
     // Version 3: a random letter distorts by itself, and the robot goes to repair it.
     while (version === "3") {
@@ -276,7 +268,6 @@
 
   async function start() {
     const id = ++run;
-    replay.classList.remove("show");
     say("", "normal");
     delete bot.dataset.reach;
     chars.forEach(el => { el.getAnimations().forEach(a => a.cancel()); });
@@ -353,7 +344,6 @@
     for (let i = 0; i < 2; i++) {
       await tween(300, id, k => { pos.y = home.road - Math.sin(k * Math.PI) * 16; });
     }
-    replay.classList.add("show");
   }
 
   async function hopOrDrive(home, id, margin, width) {
@@ -364,7 +354,6 @@
 
   const begin = () => (version ? startSecondVersion() : start()).catch(() => {});
   document.fonts.ready.then(begin);
-  replay.addEventListener("click", begin);
 
   let resize;
   let lastWidth = innerWidth;

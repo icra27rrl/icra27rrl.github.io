@@ -190,8 +190,8 @@ h1 {
 .prose.intro { margin: 0 0 24px; }
 .prose.note { margin: 24px 0 0; color: var(--muted); font-size: 16px; }
 
-.topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; margin: 0; padding: 0; list-style: none; }
-.topics li { padding: 9px 0; border-top: 1px solid color-mix(in srgb, currentColor 40%, transparent); font-size: 17px; line-height: 1.4; }
+.topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 28px; margin: 0; padding: 0 0 0 20px; list-style: disc; }
+.topics li { font-size: 17px; line-height: 1.4; }
 
 @media (max-width: 720px) {
   .topics { grid-template-columns: 1fr; }

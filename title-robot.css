@@ -49,7 +49,7 @@
   padding: 0.07em 0.26em;
   border-radius: 999px;
   background: #fffdf8;
-  color: #10213f;
+  color: #002f6c;
   font: 700 0.34em/1.25 var(--display);
   white-space: nowrap;
   opacity: 0;
@@ -90,3 +90,6 @@
   .hero-inner { padding-top: 36px; }
   .hero h1 { line-height: 1.7; }
 }
+
+/* Keeps the blue band stripe distinct from the blue heading. */
+.hero::after { border-top: 2px solid #f5f0e5; }

@@ -26,7 +26,7 @@
   const BOT = `
     <svg viewBox="0 0 120 124" aria-hidden="true">
       <line x1="60" y1="27" x2="60" y2="10" stroke="#5e6b78" stroke-width="5" stroke-linecap="round"/>
-      <circle cx="60" cy="9" r="8" fill="#e5484d"/>
+      <circle cx="60" cy="9" r="8" fill="#cd2e3a"/>
       <circle cx="57" cy="6" r="2.5" fill="#fff" opacity=".8"/>
       <g class="bot-arm"><path d="M60 84 L60 112" stroke="#f0b93a" stroke-width="7" stroke-linecap="round"/><path d="M52 118 Q60 106 68 118" fill="none" stroke="#f0b93a" stroke-width="6" stroke-linecap="round"/></g>
       <rect x="12" y="84" width="96" height="30" rx="15" fill="#2c3440"/>
@@ -36,7 +36,7 @@
       <rect x="44" y="76" width="32" height="12" rx="4" fill="#c9d1d6"/>
       <rect x="10" y="26" width="100" height="56" rx="24" fill="#fbf6ea"/>
       <rect x="10" y="26" width="100" height="56" rx="24" fill="none" stroke="#d9cfba" stroke-width="3"/>
-      <rect x="21" y="35" width="78" height="38" rx="17" fill="#10213f"/>
+      <rect x="21" y="35" width="78" height="38" rx="17" fill="#002f6c"/>
       <circle cx="16" cy="62" r="0" fill="none"/>
       <circle cx="31" cy="64" r="5" fill="#f4a0b5" opacity=".75"/>
       <circle cx="89" cy="64" r="5" fill="#f4a0b5" opacity=".75"/>

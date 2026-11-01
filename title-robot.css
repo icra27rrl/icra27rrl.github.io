@@ -1,0 +1,92 @@
+/* Extra room between title lines so the robot has a road to drive on. */
+.hero-inner { padding-top: 56px; }
+
+.hero h1 {
+  position: relative;
+  max-width: 11.5em;
+  padding-top: 0.34em;
+  line-height: 1.62;
+}
+
+.word { display: inline-block; white-space: nowrap; }
+.ch { display: inline-block; }
+
+.title-bot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 0.68em;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform;
+}
+
+.title-bot svg { display: block; width: 100%; height: auto; overflow: visible; transform-origin: 50% 100%; }
+
+.bot-wheel { transform-box: fill-box; transform-origin: center; }
+
+.bot-eyes { transform-box: fill-box; transform-origin: center; animation: bot-blink 3.4s infinite; }
+
+@keyframes bot-blink {
+  0%, 94%, 100% { transform: scaleY(1); }
+  97% { transform: scaleY(0.1); }
+}
+
+.bot-face { display: none; }
+.title-bot[data-face="normal"] .face-normal,
+.title-bot[data-face="look"] .face-look,
+.title-bot[data-face="think"] .face-think,
+.title-bot[data-face="happy"] .face-happy { display: block; }
+
+.bot-arm { transform-box: fill-box; transform-origin: 50% 0; transform: rotate(-58deg); transition: transform 0.2s; }
+.title-bot[data-reach] .bot-arm { transform: rotate(0deg); }
+
+.bot-bubble {
+  position: absolute;
+  right: 72%;
+  bottom: 86%;
+  padding: 0.07em 0.26em;
+  border-radius: 999px;
+  background: #fffdf8;
+  color: #10213f;
+  font: 700 0.34em/1.25 var(--display);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px) scale(0.8);
+  transition: opacity 0.18s, transform 0.18s;
+}
+
+.bot-bubble.show { opacity: 1; transform: none; }
+
+.bot-bubble::after {
+  content: "";
+  position: absolute;
+  right: 12%;
+  bottom: -0.16em;
+  width: 0.28em;
+  height: 0.28em;
+  border-radius: 50%;
+  background: #fffdf8;
+}
+
+.title-replay {
+  margin-top: 16px;
+  padding: 4px 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: 400 13px/1.3 var(--mono);
+  opacity: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.title-replay.show { opacity: 0.75; }
+
+@media (max-width: 900px) {
+  .hero-inner { padding-top: 36px; }
+  .hero h1 { line-height: 1.7; }
+}

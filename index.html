@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robust Robot Learning for Real-World Deployment | ICRA 2027 Workshop</title>
+  <meta name="description" content="Full-day ICRA 2027 workshop on the robustness of learned perception, policies, and controllers, with invited talks, orals, posters, two challenges, and a closing panel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="title-robot.css">
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">RRL @ ICRA 2027</a>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#call">Call for papers</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <!-- Heading image: add <img class="hero-photo" src="hero.jpg" alt="..."> here. -->
+      <div class="wrap hero-inner">
+        <p class="eyebrow">ICRA 2027 Workshop</p>
+        <h1>Robust Robot Learning for Real-World Deployment</h1>
+        <ul class="hero-facts">
+          <li><b>Date</b>May 24&ndash;28, 2027</li>
+          <li><b>Location</b>Coex, Seoul, South Korea</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="button" href="#call">Call for papers</a>
+          <a class="button secondary" href="#challenges">Challenges</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap columns">
+        <div class="section-head">
+          <h2>About</h2>
+        </div>
+        <div class="prose">
+          <p>Learned perception, policies, and controllers now span the robotics stack, but long-standing robustness problems remain: the sim-to-real gap, compounding errors, sensor degradation, and out-of-distribution inputs. Robotic foundation models sharpen the issue. Clutter, small changes in viewpoint or lighting, and perturbed instructions or sensors can drastically reduce success, and benchmark scores do not reliably predict behavior with novel objects, in new scenes, or on diverse embodiments.</p>
+          <p>This workshop treats robustness as a property of the whole robot learning stack, across manipulation, mobile and field robotics, and driving, with an emphasis on foundation models.</p>
+          <p>The workshop brings together researchers from perception, planning, control, and robot learning, across academia and industry, to examine why learned systems fail outside the lab and what makes them reliable. Through invited talks, paper presentations, video demos of robot successes and failures, two robot learning challenges, and a closing panel, we will compare how different communities define, measure, and mitigate failure.</p>
+          <p>This workshop asks: <strong>How robust are policies to perturbed or adversarial instructions, sensors, and actuation?</strong> <strong>What do clutter, moving objects, and uncertain contact demand?</strong> <strong>How well do policies adapt to unseen environments, objects, and embodiments?</strong> <strong>How can robots detect failures at runtime and recover safely?</strong> <strong>Which evaluation protocols truly measure real-world robustness?</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section tinted">
+      <div class="wrap columns">
+        <div class="section-head">
+          <h2>Schedule</h2>
+          <p>Tentative. Times are local to Seoul. Talks are 30 minutes and orals are 15 minutes, both including Q&amp;A.</p>
+        </div>
+        <div class="schedule">
+          <div class="row schedule-head"><span>Time</span><span>Session</span><span>Title</span></div>
+          <div class="row plain"><time>08:30&ndash;08:45</time><div><strong>Opening Remarks</strong><span>Welcome, workshop goals, and overview of the challenges</span></div></div>
+
+          <section class="session" aria-labelledby="s1">
+            <header><span class="tag">S1</span><h3 id="s1">Perturbed and Adversarial Sensing</h3><time>08:45&ndash;10:00</time></header>
+            <div class="row"><time>08:45&ndash;09:15</time><div><strong>Invited Talk: Speaker 1</strong></div><div class="talk-title"></div></div>
+            <div class="row"><time>09:15&ndash;09:45</time><div><strong>Invited Talk: Speaker 2</strong></div><div class="talk-title"></div></div>
+            <div class="row"><time>09:45&ndash;10:00</time><div>Oral: Paper 1</div><div class="talk-title"></div></div>
+          </section>
+
+          <div class="row plain"><time>10:00&ndash;10:30</time><div><strong>Coffee Break</strong><span>Video demos of robot successes and failures</span></div></div>
+
+          <section class="session" aria-labelledby="s2">
+            <header><span class="tag">S2</span><h3 id="s2">Unstructured Environments</h3><time>10:30&ndash;11:45</time></header>
+            <div class="row"><time>10:30&ndash;11:00</time><div><strong>Invited Talk: Speaker 3</strong></div><div class="talk-title"></div></div>
+            <div class="row"><time>11:00&ndash;11:30</time><div><strong>Invited Talk: Speaker 4</strong></div><div class="talk-title"></div></div>
+            <div class="row"><time>11:30&ndash;11:45</time><div>Oral: Challenge 1 Winner</div><div class="talk-title"></div></div>
+          </section>
+
+          <div class="row plain"><time>11:45&ndash;12:30</time><div><strong>Interactive Poster Session</strong></div></div>
+          <div class="row plain"><time>12:30&ndash;14:00</time><div><strong>Lunch</strong></div></div>
+
+          <section class="session" aria-labelledby="s3">
+            <header><span class="tag">S3</span><h3 id="s3">Out-of-Distribution Contexts</h3><time>14:00&ndash;15:15</time></header>
+            <div class="row"><time>14:00&ndash;14:30</time><div><strong>Invited Talk: Speaker 5</strong></div><div class="talk-title"></div></div>
+            <div class="row"><time>14:30&ndash;15:00</time><div><strong>Invited Talk: Speaker 6</strong></div><div class="talk-title"></div></div>
+            <div class="row"><time>15:00&ndash;15:15</time><div>Oral: Paper 2</div><div class="talk-title"></div></div>
+          </section>
+
+          <div class="row plain"><time>15:15&ndash;15:45</time><div><strong>Coffee Break</strong><span>Video demos of robot successes and failures</span></div></div>
+
+          <section class="session" aria-labelledby="s4">
+            <header><span class="tag">S4</span><h3 id="s4">Failure Detection and Recovery</h3><time>15:45&ndash;17:00</time></header>
+            <div class="row"><time>15:45&ndash;16:15</time><div><strong>Invited Talk: Speaker 7</strong></div><div class="talk-title"></div></div>
+            <div class="row"><time>16:15&ndash;16:45</time><div><strong>Invited Talk: Speaker 8</strong></div><div class="talk-title"></div></div>
+            <div class="row"><time>16:45&ndash;17:00</time><div>Oral: Challenge 2 Winner</div><div class="talk-title"></div></div>
+          </section>
+
+          <section class="session" aria-labelledby="closing">
+            <header><span class="tag">End</span><h3 id="closing">Closing Session</h3><time>17:00&ndash;18:00</time></header>
+            <div class="row"><time>17:00&ndash;17:50</time><div><strong>Panel Discussion</strong><span>Open problems in defining, measuring, and mitigating failures, with audience questions</span></div></div>
+            <div class="row"><time>17:50&ndash;18:00</time><div>Challenge Awards and Closing Remarks</div></div>
+          </section>
+
+          <div class="row plain"><time>After 18:00</time><div><strong>Social Event</strong><span>Informal gathering for participants, speakers, and challenge teams</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="speakers" class="section">
+      <div class="wrap columns">
+        <div class="section-head">
+          <h2>Speakers</h2>
+          <p>Eight invited talks across four sessions.</p>
+        </div>
+        <ul class="people">
+          <li><span class="avatar" aria-hidden="true">1</span><strong>Speaker 1</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">2</span><strong>Speaker 2</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">3</span><strong>Speaker 3</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">4</span><strong>Speaker 4</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">5</span><strong>Speaker 5</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">6</span><strong>Speaker 6</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">7</span><strong>Speaker 7</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">8</span><strong>Speaker 8</strong><span>Affiliation</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="challenges" class="section tinted">
+      <div class="wrap columns">
+        <div class="section-head">
+          <h2>Challenges</h2>
+          <p>Dates and participation details will be posted here.</p>
+        </div>
+        <div>
+          <div class="cards">
+            <article class="card">
+              <p class="tag">Challenge 1</p>
+              <h3>Clutter and Perturbations</h3>
+              <p>Various manipulation tasks in office, study, and kitchen scenes. Clutter increases from clean scenes to dense distractors in the robot's path, combined with controlled sensor and instruction perturbations, so failures can be attributed to perception, grounding, or planning.</p>
+              <p class="metric"><strong>Ranking:</strong> success rate, then collision rate, across clutter and perturbation levels.</p>
+            </article>
+            <article class="card">
+              <p class="tag">Challenge 2</p>
+              <h3>Dynamics</h3>
+              <p>Dynamic manipulation with physically simulated moving objects and uncertain contact. Tasks probe trajectory prediction, periodic patterns, dynamic avoidance, state transitions, and self-triggered motion, with difficulty rising from single variations to combined effects.</p>
+              <p class="metric"><strong>Ranking:</strong> success rate together with a partial score that credits progress on incomplete tasks.</p>
+            </article>
+          </div>
+          <p class="prose note">Data, baselines, and evaluation code are ready for release. Entries are evaluated online on held-out conditions, and winners present their results at the workshop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="call" class="section">
+      <div class="wrap columns">
+        <div class="section-head">
+          <h2>Call for papers</h2>
+        </div>
+        <div class="prose">
+          <p>We invite <strong>2- to 6-page papers</strong> following <a href="https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/" target="_blank" rel="noopener"><strong>ICRA'27 guidelines</strong></a> on robustness in perception, language grounding, planning, and control. We welcome work on manipulation, mobile and field robotics, driving, medical robotics, and other applications, as well as <strong>deployment case studies</strong> and <strong>failure reports</strong> from industry. The submissions are evaluated based on the <strong>novelty</strong>, <strong>relevance</strong> to the workshop topics, and <strong>significance</strong>.</p>
+          <p>The reviews will be <strong>double-blind</strong>. All accepted papers will be presented as <strong>posters</strong>, and the top two papers will be invited for <strong>oral presentation</strong>. The best paper and best poster will receive <strong>awards and certificates</strong>. We also invite <strong>videos</strong> of robot successes and instructive failures, which will be shown during the breaks.</p>
+          <h3>Topics of interest</h3>
+          <ul class="topics">
+            <li>Uncertainty estimation and safety guarantees for learning-based models</li>
+            <li>Perturbed and adversarial sensors and instructions</li>
+            <li>Manipulation in clutter and unstructured environments</li>
+            <li>Physical reasoning and contact-rich control in dynamic scenes</li>
+            <li>Adaptation to unseen environments, objects, and embodiments</li>
+            <li>Benchmarks and evaluation protocols for robustness and safety</li>
+            <li>Sim-to-real transfer and real-world deployment</li>
+            <li>Failure detection and safe recovery</li>
+            <li>Reliable household and service robots in human environments</li>
+            <li>Long-term reliability of robots in real-world environments</li>
+          </ul>
+          <dl class="facts dates">
+            <div><dt>Submission portal</dt><dd>OpenReview</dd></div>
+            <div><dt>Submission opens</dt></div>
+            <div><dt>Submission deadline</dt></div>
+            <div><dt>Notification of acceptance</dt></div>
+            <div><dt>Camera-ready deadline</dt></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers" class="section tinted">
+      <div class="wrap columns">
+        <div class="section-head">
+          <h2>Organizers</h2>
+        </div>
+        <ul class="people">
+          <li><span class="avatar" aria-hidden="true">1</span><strong>Organizer 1</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">2</span><strong>Organizer 2</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">3</span><strong>Organizer 3</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">4</span><strong>Organizer 4</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">5</span><strong>Organizer 5</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">6</span><strong>Organizer 6</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">7</span><strong>Organizer 7</strong><span>Affiliation</span></li>
+          <li><span class="avatar" aria-hidden="true">8</span><strong>Organizer 8</strong><span>Affiliation</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap columns">
+        <div class="section-head">
+          <h2>Contact</h2>
+        </div>
+        <p class="contact">For questions about the workshop, paper submissions, or the challenges, please reach out to us at <a href="mailto:icra27.rrl@gmail.com">icra27.rrl@gmail.com</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner"><span>Robust Robot Learning for Real-World Deployment &middot; ICRA 2027 Workshop</span></div>
+  </footer>
+  <script src="title-robot.js" data-version="3"></script>
+</body>
+</html>

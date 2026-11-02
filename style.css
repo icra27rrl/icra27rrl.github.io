@@ -298,6 +298,8 @@ h1 {
 .facts dt { font: 700 21px/1.4 var(--display); text-transform: uppercase; }
 .facts dd { margin: 0; }
 
+#challenges .facts { border-top-color: var(--ink); }
+#challenges .facts div { border-bottom-color: var(--line); }
 .facts.dates div { display: flex; flex-wrap: wrap; gap: 0 16px; }
 
 @media (max-width: 560px) {
